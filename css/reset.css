@@ -1,1 +1,90 @@
 /* Base styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px
+}
+body,html{
+
+    width: 100%;
+    background-color: #E5E5E5;
+    font-family: Poppins;  
+}
+.main-menu{
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 36px;
+    padding-top: 10px;
+    justify-content: space-between;
+    
+    
+}
+.logo{
+        order: 0; 
+    
+       
+}
+.hamburger{
+    order: 1;
+ 
+
+}
+.logo a, .hamburger a{
+    color:  #6070FF;
+    font-weight: bold;
+    line-height: 20px;
+    text-decoration: none;
+}
+header{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 24px;
+    background-image: url(/images/header-shapes-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 70px;
+}
+header h1{
+    padding-top: 206px;
+    order: 0;
+    font-weight: 900;
+    font-size: 40px;
+    color: #172B4D;
+    line-height: 52px;
+    padding-bottom: 12px;
+}
+header p:nth-child(2) {
+    order: 1;
+    color: #344563;
+    padding-bottom: 12px;
+    
+}
+header p:nth-child(3){
+    order: 2;
+    color:#7F8CFF;
+    font-weight: 500;
+
+}
+header p:nth-child(1),header p:nth-child(2) {
+    font-size: 16px;
+    line-height: 24px;
+}
+header .connect{
+    order: 3;
+    padding-bottom: 136px;
+}
+header .connect a{
+    text-decoration: none;
+    color: #505F79;
+    padding: 3px;
+    font-size: 23px;
+
+}

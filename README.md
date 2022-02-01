@@ -1,6 +1,6 @@
-# Project Name
+# abdullah portfolio
 
-> One paragraph statement about the project.
+> its a simple portfolio project that features html css only
 
 ![screenshot](./app_screenshot.png)
 
