@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+  header {
+    border-bottom-left-radius: 70px;
+  }
+
   .section-content {
     margin-top: 114px;
   }
@@ -30,5 +34,15 @@
 
   .content-section-sub-1 li:nth-child(1) {
     font-weight: 600;
+  }
+
+  footer {
+    border-top-right-radius: 70px;
+  }
+
+  .contact_me {
+    border-top-left-radius: 70px;
+    padding: 100px 25px 0 25px;
+    height: 879px;
   }
 }

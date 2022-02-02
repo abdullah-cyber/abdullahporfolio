@@ -171,116 +171,139 @@
 
     <!-- about myself -->
 
-    <div class="about_myself">
-      <div class="about_myself_1">
-        <h1>
-          About <br />
-          Myself
-        </h1>
+    <footer>
+      <div class="about_myself">
+        <div class="about_myself_1">
+          <h1>
+            About <br />
+            Myself
+          </h1>
+          <p>
+            I’m a software developer! I can help you build a product, feature or website Look
+            through some of my work and experience! If you like what you see and have a project you
+            need to code, don’t hestiate to contact me.
+          </p>
+
+          <p>LET'S CONNECT</p>
+
+          <div class="flex_container_myself">
+            <a href="" aria-label="Twitter" class="fab fa-twitter fa-2x icon"> </a>
+            <a href="" class="fab fa-linkedin-in fa-2x" aria-label="linkedin"> </a>
+            <a href="" class="github_logo fab fa-github fa-2x" aria-label="github"> </a>
+            <a href="" class="fab fa-medium-m fa-2x m_logo" aria-label="mLogo"> </a>
+            <a href="" class="angellist_logo fab fa-2x fa-angellist" aria-label="angellist"> </a>
+          </div>
+          <div class="myButton get-my-resume">
+            <a href="">Get My Resume</a>
+          </div>
+        </div>
+        <div class="drops">
+          <div class="dropdown">
+            <input type="radio" id="open-1" name="toggle1" />
+            <label class="open" for="open-1"
+              ><span>Languages</span> <i class="fas fa-angle-right "></i
+            ></label>
+            <input type="radio" id="close-1" name="toggle1" />
+
+            <label class="close" for="close-1"
+              ><span>Languages</span> <i class="fas fa-angle-down "></i
+            ></label>
+
+            <ul class="dropdown-content">
+              <li>
+                <img src="images/js.png" alt="javascript" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="images/html.png" alt="html" />
+                <p>HTML</p>
+              </li>
+              <li>
+                <img src="images/css.png" alt="css" />
+                <p>CSS</p>
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="dropdown">
+            <input type="radio" id="open-2" name="toggle2" />
+            <label class="open2" for="open-2"
+              ><span>Frameworks</span> <i class="fas fa-angle-right "></i
+            ></label>
+
+            <input type="radio" id="close-2" name="toggle2" />
+            <label class="close2" for="close-2"
+              ><span>Frameworks</span> <i class="fas fa-angle-down "></i
+            ></label>
+
+            <ul class="dropdown-content2">
+              <li>
+                <img src="images/jquery.png" alt="jquery" />
+                <p>JQuery</p>
+              </li>
+              <li>
+                <img src="images/bootstrap.png" alt="bootstrap" />
+                <p>Bootstrap</p>
+              </li>
+              <li>
+                <img src="images/node.png" alt="node" />
+                <p>Node</p>
+              </li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="dropdown">
+            <input type="radio" id="open-3" name="toggle1" />
+            <label class="open3" for="open-3"
+              ><span>Skills</span> <i class="fas fa-angle-right "></i
+            ></label>
+
+            <input type="radio" id="close-3" name="toggle1" />
+            <label class="close3" for="close-3"
+              ><span>Skills</span><i class="fas fa-angle-down "></i
+            ></label>
+
+            <ul class="dropdown-content3">
+              <li>
+                <img src="images/js.png" alt="javascript" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="images/html.png" alt="html" />
+                <p>HTML</p>
+              </li>
+              <li>
+                <img src="images/css.png" alt="css" />
+                <p>CSS</p>
+              </li>
+            </ul>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <!-- contact me -->
+
+      <div class="contact_me">
+        <h1>Contact me</h1>
         <p>
-          I’m a software developer! I can help you build a product, feature or website Look through
-          some of my work and experience! If you like what you see and have a project you need to
-          code, don’t hestiate to contact me.
+          If you have an application you are interested in developing, a feature that you need built
+          or a project that needs coding. I’d love to help with it
         </p>
-
-        <p>LET'S CONNECT</p>
-
-        <div class="flex_container_myself">
-          <a href="" aria-label="Twitter" class="fab fa-twitter fa-2x icon"> </a>
-          <a href="" class="fab fa-linkedin-in fa-2x" aria-label="linkedin"> </a>
-          <a href="" class="github_logo fab fa-github fa-2x" aria-label="github"> </a>
-          <a href="" class="fab fa-medium-m fa-2x m_logo" aria-label="mLogo"> </a>
-          <a href="" class="angellist_logo fab fa-2x fa-angellist" aria-label="angellist"> </a>
-        </div>
-        <div class="myButton get-my-resume">
-          <a href="">Get My Resume</a>
-        </div>
+        <form action="https://formspree.io/f/xvoderzk" method="POST">
+          <input type="text" placeholder="Enter your name" maxlength="30" /><br />
+          <input type="email" placeholder="Enter a valid email" /><br />
+          <textarea
+            name="message"
+            rows="20"
+            placeholder="Write your message here"
+            maxlength="500"
+          ></textarea>
+          <button type="submit">Get in Touch</button>
+        </form>
       </div>
-      <div class="drops">
-        <div class="dropdown">
-          <input type="radio" id="open-1" name="toggle1" />
-          <label class="open" for="open-1"
-            ><span>Languages</span> <i class="fas fa-angle-right "></i
-          ></label>
-          <input type="radio" id="close-1" name="toggle1" />
-
-          <label class="close" for="close-1"
-            ><span>Languages</span> <i class="fas fa-angle-down "></i
-          ></label>
-
-          <ul class="dropdown-content">
-            <li>
-              <img src="images/js.png" alt="javascript" />
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <img src="images/html.png" alt="html" />
-              <p>HTML</p>
-            </li>
-            <li>
-              <img src="images/css.png" alt="css" />
-              <p>CSS</p>
-            </li>
-          </ul>
-        </div>
-        <hr />
-
-        <div class="dropdown">
-          <input type="radio" id="open-2" name="toggle2" />
-          <label class="open2" for="open-2"
-            ><span>Frameworks</span> <i class="fas fa-angle-right "></i
-          ></label>
-
-          <input type="radio" id="close-2" name="toggle2" />
-          <label class="close2" for="close-2"
-            ><span>Frameworks</span> <i class="fas fa-angle-down "></i
-          ></label>
-
-          <ul class="dropdown-content2">
-            <li>
-              <img src="images/jquery.png" alt="jquery" />
-              <p>JQuery</p>
-            </li>
-            <li>
-              <img src="images/bootstrap.png" alt="bootstrap" />
-              <p>Bootstrap</p>
-            </li>
-            <li>
-              <img src="images/node.png" alt="node" />
-              <p>Node</p>
-            </li>
-          </ul>
-        </div>
-        <hr />
-
-        <div class="dropdown">
-          <input type="radio" id="open-3" name="toggle1" />
-          <label class="open3" for="open-3"
-            ><span>Skills</span> <i class="fas fa-angle-right "></i
-          ></label>
-
-          <input type="radio" id="close-3" name="toggle1" />
-          <label class="close3" for="close-3"
-            ><span>Skills</span><i class="fas fa-angle-down "></i
-          ></label>
-
-          <ul class="dropdown-content3">
-            <li>
-              <img src="images/js.png" alt="javascript" />
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <img src="images/html.png" alt="html" />
-              <p>HTML</p>
-            </li>
-            <li>
-              <img src="images/css.png" alt="css" />
-              <p>CSS</p>
-            </li>
-          </ul>
-        </div>
-        <hr />
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
