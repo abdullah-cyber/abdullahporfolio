@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+  .section-content {
+    margin-top: 114px;
+  }
+
+  section {
+    flex-flow: column;
+    margin: 24px;
+    padding: 16px;
+    margin-bottom: 88px;
+    border-radius: 16px;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+  }
+
+  .snapshoot {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .tonic {
+    font-size: 10vw;
+    font-weight: bolder;
+  }
+
+  .content-section-sub-1 li {
+    font-size: 4vw;
+  }
+
+  .content-section-sub-1 li:nth-child(1) {
+    font-weight: 600;
+  }
+}
