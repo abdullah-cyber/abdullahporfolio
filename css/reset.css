@@ -283,6 +283,7 @@ section{
           .dropdown-content li,
           .dropdown-content2 li,
           .dropdown-content3 li {
+            display: flex;
             column-gap: 30px;
             padding: 10px;
             background: #f7f7f9;
