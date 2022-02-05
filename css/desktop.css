@@ -70,6 +70,10 @@ section {
   color: #091e42;
   font-weight: bolder;
 }
+.content-section-sub-2 li {
+    margin-top: 50px;
+  }
+  
 
 .ruby li:nth-child(2) {
   display: block;
@@ -107,9 +111,6 @@ section {
   padding-bottom: 30px;
 }
 
-.content-section-sub-2 li {
-  margin-top: 50px;
-}
 
 .sec-1 p::after {
   content: "A daily selection of privately personalized reads; no accounts or sign-ups required.";

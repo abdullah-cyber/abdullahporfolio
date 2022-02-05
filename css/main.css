@@ -46,7 +46,23 @@ header h1 {
   line-height: 52px;
   padding-bottom: 12px;
 }
-
+.content-section p {
+  padding-top: 20px;
+}
+.about_myself p {
+  font-size: 16px;
+  line-height: 24px;
+  order: 1;
+  padding: 12px 0;
+}
+.contact_me p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  padding-top: 12px;
+}
 header p:nth-child(2) {
   order: 1;
   color: #344563;
@@ -69,7 +85,23 @@ header .connect {
   order: 3;
   padding-bottom: 136px;
 }
-
+.myButton a {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #396df2;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+}
+.flex_container_myself a {
+  color: #505f79;
+  font-size: 23px;
+  text-decoration: none;
+  padding-right: 15px;
+}
 header .connect a {
   text-decoration: none;
   color: #505f79;
@@ -114,10 +146,20 @@ section {
   font-size: 4vw;
   flex-wrap: nowrap;
 }
-
+.dropdown-content li,
+.dropdown-content2 li,
+.dropdown-content3 li {
+  display: flex;
+  column-gap: 30px;
+  padding: 10px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  width: 303px;
+  height: 66.72px;
+  margin-bottom: 12px;
+}
 .content-section-sub-1 {
   column-gap: 8px;
-  align-items: left;
   padding-top: 20px;
 }
 
@@ -128,26 +170,6 @@ section {
   color: #7a869a;
   list-style-position: inside;
 }
-
-.content-section-sub-1 li:nth-child(1) {
-  list-style: none;
-  padding: 0;
-  font-weight: 600;
-  color: #344563;
-}
-
-.content-section p {
-  padding-top: 20px;
-}
-
-/* .content-section p:nth-child(4){
-     display: none;
-   } */
-.content-section-sub-2 {
-  column-gap: 8px;
-  padding-top: 16px;
-}
-
 .content-section-sub-2 li {
   list-style: none;
   font-weight: bold;
@@ -160,6 +182,24 @@ section {
   background-color: #ebebff;
   text-align: center;
 }
+
+.content-section-sub-1 li:nth-child(1) {
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+  color: #344563;
+}
+
+
+
+/* .content-section p:nth-child(4){
+     display: none;
+   } */
+.content-section-sub-2 {
+  column-gap: 8px;
+  padding-top: 16px;
+}
+
 
 .content-section-sub-2 li:nth-child(1) {
   border-radius: 8px;
@@ -206,17 +246,7 @@ section {
   background-color: white;
 }
 
-.myButton a {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #396df2;
-  display: flex;
-  justify-content: center;
-  letter-spacing: 0.03em;
-  padding-top: 10px;
-}
+
 
 footer {
   background-color: white;
@@ -242,12 +272,7 @@ footer {
   padding: 12px 0;
 }
 
-.about_myself p {
-  font-size: 16px;
-  line-height: 24px;
-  order: 1;
-  padding: 12px 0;
-}
+
 
 .about_myself p:nth-child(3) {
   color: #7f8cff;
@@ -262,12 +287,7 @@ footer {
   padding-top: 26px;
 }
 
-.flex_container_myself a {
-  color: #505f79;
-  font-size: 23px;
-  text-decoration: none;
-  padding-right: 15px;
-}
+
 
 .get-my-resume {
   width: 170px;
@@ -302,18 +322,6 @@ footer {
   height: auto;
 }
 
-.dropdown-content li,
-.dropdown-content2 li,
-.dropdown-content3 li {
-  display: flex;
-  column-gap: 30px;
-  padding: 10px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  width: 303px;
-  height: 66.72px;
-  margin-bottom: 12px;
-}
 
 hr {
   background: #dfe1e6;
@@ -430,14 +438,7 @@ input[type="radio"] ~ label {
   padding-top: 103px;
 }
 
-.contact_me p {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  color: #ebebff;
-  text-align: center;
-  padding-top: 12px;
-}
+
 
 form input:nth-child(1),
 form input:nth-child(3),
