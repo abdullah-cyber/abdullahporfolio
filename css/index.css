@@ -1,8 +1,9 @@
 /* Example of @import use
 This imports the `reset.css` file */
 @import './reset.css';
-@import './mobile.css';
 @import './main.css';
+@import './tablet.css' screen and (min-width: 768px);
+@import './desktop.css' screen and (min-width: 992px);
 
 /* @import './medium.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
