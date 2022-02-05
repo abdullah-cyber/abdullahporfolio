@@ -200,8 +200,6 @@ section {
   color: #344563;
 }
 
-
-
 /* .content-section p:nth-child(4){
      display: none;
    } */
@@ -425,8 +423,6 @@ input[type="radio"] ~ label {
   border-top-left-radius: 70px;
   position: static;
   text-align: center;
-
-
 
   /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
