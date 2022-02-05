@@ -23,6 +23,7 @@ body,html{
     width: 100%;
     background-color: #E5E5E5;
     font-family: Poppins;  
+    font-style: normal;
 }
 header, .main-menu, section,.section-content,.content-section-sub-1,
  .content-section-sub-2,.about_myself,.contact_me{
@@ -49,4 +50,14 @@ header, .main-menu, section,.section-content,.content-section-sub-1,
  button:active{
     background: #2230D2;
  }
+ .myButton a:hover{
+     color: white;
+ }
+ form input:nth-child(1),
+form input:nth-child(3),
+textarea,
+form button{
+    font-family: poppins;
+    font-style: normal;
+}
 

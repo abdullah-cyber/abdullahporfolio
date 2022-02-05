@@ -46,15 +46,18 @@ header h1 {
   line-height: 52px;
   padding-bottom: 12px;
 }
+
 .content-section p {
   padding-top: 20px;
 }
+
 .about_myself p {
   font-size: 16px;
   line-height: 24px;
   order: 1;
   padding: 12px 0;
 }
+
 .contact_me p {
   font-weight: normal;
   font-size: 20px;
@@ -63,6 +66,7 @@ header h1 {
   text-align: center;
   padding-top: 12px;
 }
+
 header p:nth-child(2) {
   order: 1;
   color: #344563;
@@ -85,6 +89,7 @@ header .connect {
   order: 3;
   padding-bottom: 136px;
 }
+
 .myButton a {
   font-weight: 500;
   font-size: 17px;
@@ -96,12 +101,14 @@ header .connect {
   letter-spacing: 0.03em;
   padding-top: 10px;
 }
+
 .flex_container_myself a {
   color: #505f79;
   font-size: 23px;
   text-decoration: none;
   padding-right: 15px;
 }
+
 header .connect a {
   text-decoration: none;
   color: #505f79;
@@ -146,6 +153,7 @@ section {
   font-size: 4vw;
   flex-wrap: nowrap;
 }
+
 .dropdown-content li,
 .dropdown-content2 li,
 .dropdown-content3 li {
@@ -158,6 +166,7 @@ section {
   height: 66.72px;
   margin-bottom: 12px;
 }
+
 .content-section-sub-1 {
   column-gap: 8px;
   padding-top: 20px;
@@ -170,6 +179,7 @@ section {
   color: #7a869a;
   list-style-position: inside;
 }
+
 .content-section-sub-2 li {
   list-style: none;
   font-weight: bold;
@@ -199,7 +209,6 @@ section {
   column-gap: 8px;
   padding-top: 16px;
 }
-
 
 .content-section-sub-2 li:nth-child(1) {
   border-radius: 8px;
@@ -246,8 +255,6 @@ section {
   background-color: white;
 }
 
-
-
 footer {
   background-color: white;
   border-top-right-radius: 70px;
@@ -272,8 +279,6 @@ footer {
   padding: 12px 0;
 }
 
-
-
 .about_myself p:nth-child(3) {
   color: #7f8cff;
   font-weight: 500;
@@ -286,8 +291,6 @@ footer {
   padding-left: 15px;
   padding-top: 26px;
 }
-
-
 
 .get-my-resume {
   width: 170px;
@@ -321,7 +324,6 @@ footer {
   width: auto;
   height: auto;
 }
-
 
 hr {
   background: #dfe1e6;
@@ -438,14 +440,10 @@ input[type="radio"] ~ label {
   padding-top: 103px;
 }
 
-
-
 form input:nth-child(1),
 form input:nth-child(3),
 textarea,
 form button {
-  font-family: Poppins;
-  font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 20px;
