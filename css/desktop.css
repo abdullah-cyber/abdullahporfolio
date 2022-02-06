@@ -136,17 +136,18 @@ section {
 .about_myself {
   padding: 142px;
   padding-bottom: 0;
-  gap: 50px;
+  gap: 60px;
+  
 }
 
-.about_myself_1 {
-  width: 447px;
+.drops{
+    width: 600px;
 }
 
 hr {
   background: #dfe1e6;
   height: 1px;
-  width: 500px;
+  width: 350px;
 }
 
 .contact_me {
