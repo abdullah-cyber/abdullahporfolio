@@ -96,6 +96,10 @@ section {
   color: #344563;
 }
 
+footer {
+  border-top-right-radius: 100px;
+}
+
 .about_myself {
   flex-flow: row;
   padding: 50px;
@@ -103,9 +107,16 @@ section {
 }
 
 .contact_me {
-  padding: 0 200px;
   padding-bottom: 100px;
   flex-flow: column;
+  text-align: center;
+  border-top-left-radius: 100px;
+}
+
+.contact_me p {
+  width: 680px;
+  margin: auto;
+  padding-bottom: 12px;
 }
 
 form button {
@@ -117,4 +128,10 @@ form input:nth-child(3),
 textarea {
   border: none;
   border-radius: 0;
+  margin: 15px;
+}
+
+form {
+  width: 500px;
+  margin: auto;
 }

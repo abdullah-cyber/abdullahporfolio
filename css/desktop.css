@@ -137,11 +137,10 @@ section {
   padding: 142px;
   padding-bottom: 0;
   gap: 60px;
-  
 }
 
-.drops{
-    width: 600px;
+.drops {
+  width: 600px;
 }
 
 hr {
@@ -154,4 +153,3 @@ hr {
   padding-bottom: 100px;
   flex-flow: column;
 }
-

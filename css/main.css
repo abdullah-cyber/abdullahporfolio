@@ -422,9 +422,6 @@ input[type="radio"] ~ label {
   padding: 24px;
   border-top-left-radius: 70px;
   position: static;
-  text-align: center;
-
-  /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
 
 .contact_me h1 {
