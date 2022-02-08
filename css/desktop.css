@@ -98,6 +98,10 @@ section {
   margin-top: 30px;
 }
 
+.sec-4 .content-section-sub-2 li {
+  margin-top: 20px;
+}
+
 .sec-1 p::after,
 .sec-2 p::after,
 .sec-3 p::after,
