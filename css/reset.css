@@ -1,1 +1,63 @@
-/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* :root {
+    --primary: #3c3a39;
+    --secondary: #fff;
+    --tertiary: #1c1a19;
+    --others: #ff6b00;
+    --alternative: #091e42;
+    --dark: #1c1a19;
+    --poppins: 'Poppins', sans-serif;
+    --crete: 'Crete Round', serif;
+    --roboto: 'Roboto', sans-serif;
+    --inter: 'Inter', sans-serif;
+  } */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+body,html{
+
+    width: 100%;
+    background-color: #E5E5E5;
+    font-family: Poppins;  
+    font-style: normal;
+}
+header, .main-menu, section,.section-content,.content-section-sub-1,
+ .content-section-sub-2,.about_myself,.contact_me{
+    display: flex;
+}
+.logo a, .hamburger a, .about a{
+    color:  #6070FF;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 20px;
+}
+.main-menu,.content-section-sub-1, .content-section-sub-2,.flex_container_myself{
+    flex-flow: row;
+}
+.section-content{
+    flex-flow:wrap;
+}
+.myButton:hover,
+ button:hover{
+    background: #6070FF;
+    color: #FFFFFF;
+}
+.myButton:active,
+ button:active{
+    background: #2230D2;
+ }
+ .myButton a:hover{
+     color: white;
+ }
+ form input:nth-child(1),
+form input:nth-child(3),
+textarea,
+form button{
+    font-family: poppins;
+    font-style: normal;
+}
+
