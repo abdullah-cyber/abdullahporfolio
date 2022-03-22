@@ -1,4 +1,4 @@
-# This is abdullah portfolio
+# This is abdullah owolabi portfolio
 
 > its a simple portfolio project that features html css only
 
