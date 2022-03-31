@@ -17,12 +17,20 @@
     <nav class="main-menu">
       <div class="logo"><a href="" aria-label="myLogo icon">My Logo</a></div>
       <div class="hamburger">
-        <a href="" aria-label="hamburger icon" class="far fa-bars fa-2x"></a>
+        <a id="hamburger" aria-label="hamburger icon" class="far fa-bars fa-2x"></a>
       </div>
-      <div class="about">
+      <div class="about1">
         <a href="" aria-label="portfolio link">Portfolio</a>
         <a href="" aria-label="About link">About</a>
         <a href="" aria-label="Contact link">Contact</a>
+      </div>
+      <div class="overlay" id="myOverlay">
+        <i class="fa fa-times fa-2x exitOverlay" id="exitOverlay" aria-hidden="true"></i>
+        <div class="about" id="about">
+          <a href="" aria-label="portfolio link">Portfolio</a>
+          <a href="" aria-label="About link">About</a>
+          <a href="" aria-label="Contact link">Contact</a>
+        </div>
       </div>
     </nav>
 
@@ -315,5 +323,6 @@
         </form>
       </div>
     </footer>
+    <script type="text/javascript" src="js/mobilemenu.js"></script>
   </body>
 </html>

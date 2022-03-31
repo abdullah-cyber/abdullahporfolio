@@ -29,7 +29,7 @@ header, .main-menu, section,.section-content,.content-section-sub-1,
  .content-section-sub-2,.about_myself,.contact_me{
     display: flex;
 }
-.logo a, .hamburger a, .about a{
+.logo a, .hamburger a, .about a, .about1 a{
     color:  #6070FF;
     font-weight: bold;
     text-decoration: none;

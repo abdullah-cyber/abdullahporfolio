@@ -5,7 +5,8 @@
 
 header {
   border-bottom-left-radius: 100px;
-  padding: 0 150px 0 150px;
+  padding-left: 150px;
+  padding-right: 150px;
   background-size: cover;
 }
 
