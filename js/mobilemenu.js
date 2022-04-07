@@ -15,11 +15,4 @@ function closeOverlay() {
 }
 document.getElementById('exitOverlay').addEventListener('click', closeOverlay);
 
-function resetMenu() {
-  if (window.innerWidth >= 900) {
-    document.getElementById('about').style.display = 'flex';
-  } else if (window.innerWidth < 900) {
-    document.getElementById('about').style.display = 'none';
-  }
-}
-window.addEventListener('resize', resetMenu);
+
