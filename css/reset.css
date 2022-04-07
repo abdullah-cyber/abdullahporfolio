@@ -41,16 +41,16 @@ header, .main-menu, section,.section-content,.content-section-sub-1,
 .section-content{
     flex-flow:wrap;
 }
-.myButton:hover,
+.myButton:hover, .get-my-resume:hover,
  button:hover{
     background: #6070FF;
     color: #FFFFFF;
 }
-.myButton:active,
+.myButton:active, .get-my-resume:active,
  button:active{
     background: #2230D2;
  }
- .myButton a:hover{
+ .myButton button:hover{
      color: white;
  }
  form input:nth-child(1),
