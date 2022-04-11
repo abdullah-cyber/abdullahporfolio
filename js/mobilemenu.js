@@ -14,3 +14,4 @@ function closeOverlay() {
   document.body.style.position = 'absolute';
 }
 document.getElementById('exitOverlay').addEventListener('click', closeOverlay);
+
