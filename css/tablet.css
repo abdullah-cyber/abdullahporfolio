@@ -148,6 +148,10 @@ form {
   width: 500px;
 }
 
+.popup-content-first {
+  height: auto;
+}
+
 .pop-img {
   background-repeat: no-repeat;
   height: 350px;
@@ -165,7 +169,7 @@ form {
 
 .popup-content-second-description {
   order: 0;
-  width: 220px;
+  width: 500px;
   padding-top: 15px;
 }
 
@@ -175,4 +179,27 @@ form {
 
 .see-project .myButton {
   width: 100px;
+}
+
+.popup-list {
+  width: 170px;
+  padding: 10px;
+}
+
+.description::after {
+  content:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the"
+    "releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with"
+    "the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley"
+    "of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem"
+    "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.see-project {
+  padding-left: 15px;
 }

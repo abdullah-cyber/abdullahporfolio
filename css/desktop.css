@@ -161,12 +161,20 @@ hr {
   flex-flow: column;
 }
 
+.poup {
+  height: 100%;
+  width: 100%;
+}
+
 .popup-content {
   padding-left: 20px;
   margin: auto;
   width: 850px;
+  padding-bottom: 200px;
+}
 
-  /* height: 00px; */
+.popup-content-first {
+  height: auto;
 }
 
 .pop-img {
@@ -192,7 +200,7 @@ hr {
   padding-left: 15px;
   padding-top: 15px;
   order: 1;
-  width: 250px;
+  width: 260px;
 }
 
 .theBorder {
@@ -214,10 +222,4 @@ hr {
     "of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem"
     "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
     "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
-  margin-bottom: 20px;
 }
-
-/* .popup-content-section-sub li:nth-child(3),
-.popup-content-section-sub li:nth-child(4) {
-  display: block;
-} */

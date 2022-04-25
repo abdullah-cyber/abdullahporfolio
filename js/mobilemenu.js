@@ -22,7 +22,7 @@ document.getElementById('exitOverlay').addEventListener('click', closeOverlay);
 
 //pop up code
 
-const info = [
+const list = [
   {
     name: 'Tonic',
     technology: '<li>CANOPY</li><li>BACK END DEV</li><li>2015</li>',
@@ -54,13 +54,13 @@ const info = [
 ];
 
 function myInformation(i) {
-  document.querySelector('.name').innerText = info[i].name;
-  document.querySelector('.description').innerText = info[i].description;
-  document.querySelector('.technology').innerHTML = info[i].technology;
-  document.querySelector('#image').style.backgroundImage = info[i].image;
+  document.querySelector('.name').innerText = list[i].name;
+  document.querySelector('.description').innerText = list[i].description;
+  document.querySelector('.technology').innerHTML = list[i].technology;
+  document.querySelector('#image').style.backgroundImage = list[i].image;
 }
 
-for (let i = 0; i < info.length; i += 1) {
+for (let i = 0; i < list.length; i += 1) {
   openBtn[i].addEventListener('click', () => {
     mypopUp.style.display = 'block';
     myInformation(i);
@@ -76,5 +76,6 @@ closeBtn.addEventListener('click', () => {
 window.onclick = function(event) {
   if (event.target == mypopUp) {
     mypopUp.style.display = 'none';
+    document.body.style.position = 'relative';
   }
 };

@@ -19,7 +19,7 @@
     margin:0;
 }
 body,html{
-
+    height: 100%;
     width: 100%;
     background-color: #E5E5E5;
     font-family: Poppins;  
@@ -41,16 +41,16 @@ header, .main-menu, section,.section-content,.content-section-sub-1,
 .section-content, .popup-content{
     flex-flow:wrap;
 }
-.myButton:hover, .get-my-resume:hover,
+.see-project a:hover, .get-my-resume:hover,
  button:hover{
     background: #6070FF;
     color: #FFFFFF;
 }
-.myButton:active, .get-my-resume:active,
+.see-project a:active, .get-my-resume:active,
  button:active{
     background: #2230D2;
  }
- .myButton button:hover{
+ .see-project a:active{
      color: white;
  }
  form input:nth-child(1),
