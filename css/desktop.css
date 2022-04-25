@@ -90,7 +90,8 @@ section {
 .sec-1 p,
 .sec-2 p,
 .sec-3 p,
-.sec-4 p {
+.sec-4 p,
+.description {
   visibility: hidden;
   position: relative;
 }
@@ -106,7 +107,8 @@ section {
 .sec-1 p::after,
 .sec-2 p::after,
 .sec-3 p::after,
-.sec-4 p::after {
+.sec-4 p::after,
+.description::after {
   visibility: visible;
   position: absolute;
   top: 20px;
@@ -158,3 +160,64 @@ hr {
   padding-bottom: 100px;
   flex-flow: column;
 }
+
+.popup-content {
+  padding-left: 20px;
+  margin: auto;
+  width: 850px;
+
+  /* height: 00px; */
+}
+
+.pop-img {
+  background-repeat: no-repeat;
+  height: 586px;
+  width: 1108px;
+  background-size: contain;
+  margin-top: 20px;
+}
+
+.popup-content-second {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup-content-second-description {
+  width: 1000px;
+}
+
+.popup-list {
+  padding-left: 15px;
+  padding-top: 15px;
+  order: 1;
+  width: 250px;
+}
+
+.theBorder {
+  margin-top: 20px;
+}
+
+.see-project {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.description::after {
+  content:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the"
+    "releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with"
+    "the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley"
+    "of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem"
+    "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+  margin-bottom: 20px;
+}
+
+/* .popup-content-section-sub li:nth-child(3),
+.popup-content-section-sub li:nth-child(4) {
+  display: block;
+} */

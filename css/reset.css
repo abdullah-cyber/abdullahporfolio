@@ -26,7 +26,7 @@ body,html{
     font-style: normal;
 }
 header, .main-menu, section,.section-content,.content-section-sub-1,
- .content-section-sub-2,.about_myself,.contact_me{
+ .content-section-sub-2,.popup-content-section-sub,.about_myself,.contact_me, .popup{
     display: flex;
 }
 .logo a, .hamburger a, .about a, .about1 a{
@@ -35,10 +35,10 @@ header, .main-menu, section,.section-content,.content-section-sub-1,
     text-decoration: none;
     line-height: 20px;
 }
-.main-menu,.content-section-sub-1, .content-section-sub-2,.flex_container_myself{
+.main-menu,.content-section-sub-1, .content-section-sub-2,.popup-content-section-sub,.flex_container_myself{
     flex-flow: row;
 }
-.section-content{
+.section-content, .popup-content{
     flex-flow:wrap;
 }
 .myButton:hover, .get-my-resume:hover,

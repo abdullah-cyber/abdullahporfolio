@@ -80,6 +80,10 @@ section {
   color: #091e42;
 }
 
+.img-sec {
+  order: 1;
+}
+
 .content-section-sub-1,
 .content-section-sub-2 {
   font-size: 10px;
@@ -136,4 +140,39 @@ textarea {
 form {
   width: 500px;
   margin: auto;
+}
+
+.popup-content {
+  padding-left: 20px;
+  margin: auto;
+  width: 500px;
+}
+
+.pop-img {
+  background-repeat: no-repeat;
+  height: 350px;
+  width: auto;
+  background-size: contain;
+  float: inherit;
+}
+
+.popup-content-second {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+.popup-content-second-description {
+  order: 0;
+  width: 220px;
+  padding-top: 15px;
+}
+
+.popup-content-second-list {
+  order: 1;
+}
+
+.see-project .myButton {
+  width: 100px;
 }
