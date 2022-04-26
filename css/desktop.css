@@ -8,6 +8,11 @@ header {
   padding-left: 150px;
   padding-right: 150px;
   background-size: cover;
+  height: 916px;
+}
+
+header h1 {
+  padding-top: 314px;
 }
 
 .about {
@@ -29,13 +34,12 @@ header {
 
 .section-content {
   margin: 30px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 section {
   padding: 24px;
   height: 396px;
-  width: auto;
   margin: auto;
   margin-bottom: 80px;
   justify-self: center;
@@ -45,8 +49,13 @@ section {
   order: 1;
 }
 
-.snapshoot {
+.snapshoot,
+section {
   width: auto;
+}
+
+.snapshoot,
+.popup {
   height: 100%;
 }
 
@@ -161,8 +170,7 @@ hr {
   flex-flow: column;
 }
 
-.poup {
-  height: 100%;
+.popup {
   width: 100%;
 }
 

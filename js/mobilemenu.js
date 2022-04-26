@@ -1,21 +1,24 @@
-const mypopUp = document.getElementById('popup');
+const mypopUp = document.querySelector('#popup');
 const openBtn = document.querySelectorAll('.myButton');
-const closeBtn = document.getElementById('cancelBtn');
+const closeBtn = document.querySelector('#cancelBtn');
+const about = document.querySelector('.about');
+const overlay = document.querySelector('.overlay');
+
 // const imgHeight = document.getElementById('image');
 
 function mobileMenu() {
-  if (document.getElementById('about').style.display == 'block') {
-    document.getElementsById('about').style.display = 'none';
+  if (about.style.display == 'block') {
+    about.style.display = 'none';
   } else {
-    document.getElementById('about').style.display = 'block';
-    document.getElementById('myOverlay').style.width = '100%';
+    about.style.display = 'block';
+    overlay.style.width = '100%';
     document.body.style.position = 'fixed';
   }
 }
-document.getElementById('hamburger').addEventListener('click', mobileMenu);
+document.querySelector('#hamburger').addEventListener('click', mobileMenu);
 function closeOverlay() {
-  document.getElementById('about').style.display = 'none';
-  document.getElementById('myOverlay').style.width = '0';
+  about.style.display = 'none';
+  overlay.style.width = '0';
   document.body.style.position = 'absolute';
 }
 document.getElementById('exitOverlay').addEventListener('click', closeOverlay);
@@ -64,18 +67,18 @@ for (let i = 0; i < list.length; i += 1) {
   openBtn[i].addEventListener('click', () => {
     mypopUp.style.display = 'block';
     myInformation(i);
-    document.body.style.position = 'fixed';
+    document.body.style.overflow = 'hidden';
   });
 }
 
 closeBtn.addEventListener('click', () => {
   mypopUp.style.display = 'none';
-  document.body.style.position = 'relative';
+  document.body.style.overflow = 'visible';
 });
 
 window.onclick = function(event) {
   if (event.target == mypopUp) {
     mypopUp.style.display = 'none';
-    document.body.style.position = 'relative';
+    document.body.style.overflow = 'visible';
   }
 };
