@@ -37,7 +37,7 @@
   padding-top: 15px;
 }
 
-.exitOverlay {
+#exitOverlay {
   color: white;
   cursor: pointer;
   float: right;
@@ -86,10 +86,6 @@ header h1 {
   padding-bottom: 12px;
 }
 
-.content-section p {
-  padding-top: 20px;
-}
-
 .about_myself p {
   font-size: 16px;
   line-height: 24px;
@@ -112,7 +108,7 @@ header p:nth-child(2) {
   padding-bottom: 12px;
 }
 
-header p:nth-child(3) {
+header p:nth-child(4) {
   order: 2;
   color: #7f8cff;
   font-weight: 500;
@@ -306,7 +302,9 @@ section {
 .about,
 .about1,
 .popup,
-input[type="radio"] {
+input[type="radio"],
+.img,
+.eclipse {
   display: none;
 }
 

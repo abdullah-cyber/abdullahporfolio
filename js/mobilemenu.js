@@ -3,25 +3,27 @@ const openBtn = document.querySelectorAll('.myButton');
 const closeBtn = document.querySelector('#cancelBtn');
 const about = document.querySelector('.about');
 const overlay = document.querySelector('.overlay');
+const exitOverlay = document.querySelector('.exitOverlay');
+const hamburger = document.querySelector('.hamburger1');
+const aboutmenu = document.querySelectorAll('.about-menu');
 
-// const imgHeight = document.getElementById('image');
+const mobileMenu = () => {
+  overlay.style.width = '100%';
+  about.style.display = 'block';
+  document.body.style.position = 'fixed';
+};
 
-function mobileMenu() {
-  if (about.style.display == 'block') {
-    about.style.display = 'none';
-  } else {
-    about.style.display = 'block';
-    overlay.style.width = '100%';
-    document.body.style.position = 'fixed';
-  }
-}
-document.querySelector('#hamburger').addEventListener('click', mobileMenu);
-function closeOverlay() {
-  about.style.display = 'none';
+hamburger.addEventListener('click', mobileMenu);
+const closeOverlay = () => {
   overlay.style.width = '0';
+  about.style.display = 'none';
   document.body.style.position = 'absolute';
-}
-document.getElementById('exitOverlay').addEventListener('click', closeOverlay);
+};
+
+exitOverlay.addEventListener('click', closeOverlay);
+aboutmenu.forEach(x => {
+  x.addEventListener('click', closeOverlay);
+});
 
 //pop up code
 

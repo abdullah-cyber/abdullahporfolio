@@ -18,15 +18,21 @@
 }
 
 header {
-  height: auto;
   width: auto;
   border-bottom-left-radius: 100px;
   padding: 0 150px 0 150px;
   background-image: url(/images/header-shapes-desktop.jpg);
   background-size: cover;
+  height: 916px;
+}
+
+.img,
+.eclipse {
+  display: none;
 }
 
 header h1 {
+  padding-top: 314px;
   color: #091e42;
 }
 

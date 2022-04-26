@@ -8,14 +8,40 @@ header {
   padding-left: 150px;
   padding-right: 150px;
   background-size: cover;
-  height: 916px;
+}
+
+.img {
+  position: absolute;
+  width: 224px;
+  height: 224px;
+  top: 192px;
+  align-self: flex-end;
+}
+
+.eclipse img:nth-child(1) {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  left: 839px;
+  top: 758px;
+}
+
+.eclipse img:nth-child(2) {
+  position: absolute;
+  width: 36.9px;
+  height: 18.45px;
+  left: 290.7px;
+  top: 789.93px;
+  transform: rotate(-176.08deg);
 }
 
 header h1 {
   padding-top: 314px;
 }
 
-.about {
+.about,
+.img,
+.eclipse {
   display: block;
 }
 
