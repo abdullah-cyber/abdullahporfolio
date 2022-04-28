@@ -86,6 +86,10 @@ header h1 {
   padding-bottom: 12px;
 }
 
+section p {
+  padding-top: 10px;
+}
+
 .about_myself p {
   font-size: 16px;
   line-height: 24px;
@@ -267,10 +271,6 @@ section {
   color: #344563;
 }
 
-/* .content-section p:nth-child(4){
-     display: none;
-   } */
-
 .content-section-sub-2,
 .popup-content-section-sub {
   column-gap: 8px;
@@ -304,7 +304,13 @@ section {
 .popup,
 input[type="radio"],
 .img,
-.eclipse {
+.eclipse,
+.contact-eclipse,
+.contact-eclipse1,
+.contact-eclipse2,
+.contact-eclipse3,
+.contact-eclipse4,
+.contact-eclipse5 {
   display: none;
 }
 
@@ -561,7 +567,7 @@ form button {
   left: 0;
   height: 100%;
   background: #c1c7d0;
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(500px);
   mix-blend-mode: multiply;
   box-sizing: border-box;
   transition: 3s;
@@ -573,7 +579,7 @@ form button {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   position: relative;
-  background-color: #fefefe;
+  background-color: #fff;
   padding-bottom: 50px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   overflow-x: hidden;

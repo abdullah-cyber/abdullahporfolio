@@ -56,27 +56,27 @@ section {
   height: 300px;
 }
 
-.first-snapshoot {
+.first-snapshoot,
+.second-snapshoot,
+.third-snapshoot,
+.fourth-snapshoot {
   width: auto;
   height: 100%;
+}
+
+.first-snapshoot {
   content: url(/images/Snapshoot\ Portfolio\ desktop.png);
 }
 
 .second-snapshoot {
-  width: auto;
-  height: 100%;
   content: url(/images/Snapshoot\ Portfolio2\ desktop.png);
 }
 
 .third-snapshoot {
-  width: auto;
-  height: 100%;
   content: url(/images/Snapshoot\ Portfolio3\ desktop.png);
 }
 
 .fourth-snapshoot {
-  width: auto;
-  height: 100%;
   content: url(/images/Snapshoot\ Portfolio4\ desktop.png);
 }
 
@@ -207,4 +207,25 @@ form {
 
 .see-project {
   padding-left: 15px;
+}
+
+.contact-eclipse,
+.contact-eclipse1 {
+  display: block;
+}
+
+.contact-eclipse {
+  width: 87.2px;
+  height: 18.7px;
+  margin-right: 75px;
+  padding-top: 30px;
+  align-self: flex-end;
+}
+
+.contact-eclipse1 {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  padding-top: 35px;
+  align-self: flex-end;
 }
