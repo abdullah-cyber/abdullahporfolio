@@ -319,15 +319,44 @@
           or a project that needs coding. I’d love to help with it
         </p>
         <form action="https://formspree.io/f/xvoderzk" method="POST">
-          <input type="text" placeholder="Enter your name" maxlength="30" /><br />
-          <input type="email" placeholder="Enter a valid email" /><br />
-          <textarea
-            name="message"
-            rows="20"
-            placeholder="Write your message here"
-            maxlength="500"
-          ></textarea>
-          <button type="submit" aria-label="form button">Get in Touch</button>
+          <div class="fullname-div">
+            <input
+              id="fullname"
+              class="fullname"
+              name="fullname"
+              type="text"
+              placeholder="Enter your name"
+              maxlength="30"
+            />
+            <i class="myicon"></i>
+          </div>
+          <div class="error-text">invalid input</div>
+
+          <div class="fullname-div">
+            <input
+              name="email"
+              id="email"
+              class="email"
+              type="email"
+              placeholder="Enter a valid email"
+            />
+            <i class="myicon emailIcon"></i>
+          </div>
+          <div class="error-text">invalid email</div>
+
+          <div class="fullname-div">
+            <textarea
+              name="textarea"
+              id="textarea"
+              class="textarea"
+              rows="20"
+              placeholder="Write your message here"
+              maxlength="500"
+            ></textarea>
+            <i class="myicon textareaIcon"></i>
+          </div>
+          <div class="error-text">message is short</div>
+          <button id="formSubmit" type="submit" aria-label="form button">Get in Touch</button>
         </form>
       </div>
     </footer>

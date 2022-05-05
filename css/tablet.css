@@ -122,6 +122,7 @@ footer {
   flex-flow: column;
   text-align: center;
   border-top-left-radius: 100px;
+  position: static;
 }
 
 .contact_me p {
@@ -134,12 +135,12 @@ form button {
   font-weight: 500;
 }
 
-form input:nth-child(1),
-form input:nth-child(3),
-textarea {
+.fullname,
+.email,
+.textarea {
   border: none;
   border-radius: 0;
-  margin: 15px;
+  margin-top: 15px;
 }
 
 form {
@@ -228,4 +229,26 @@ form {
   margin-right: 30px;
   padding-top: 35px;
   align-self: flex-end;
+}
+
+.fullname-div {
+  position: relative;
+}
+
+form .fullname-div input {
+  padding-left: 15px;
+  outline: none;
+}
+
+.myicon {
+  position: absolute;
+  right: 15px;
+  padding-top: 25px;
+  font-size: larger;
+}
+
+.error-text {
+  display: none;
+  color: #a12000;
+  text-align: start;
 }

@@ -323,3 +323,9 @@ hr {
   left: 350.92px;
   padding-top: 730px;
 }
+
+.error-text {
+  display: none;
+  color: #a12000;
+  text-align: start;
+}

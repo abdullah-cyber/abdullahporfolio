@@ -502,18 +502,18 @@ input[type="radio"] ~ label {
   padding-top: 103px;
 }
 
-form input:nth-child(1),
-form input:nth-child(3),
-textarea,
+.fullname,
+.email,
+.textarea,
 form button {
   font-weight: normal;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 20px;
 }
 
-form input:nth-child(1),
-form input:nth-child(3),
-textarea {
+.fullname,
+.email,
+.textarea {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   background: #fff;
@@ -522,24 +522,25 @@ textarea {
   padding: 16px;
 }
 
-form input:nth-child(1),
-form input:nth-child(3),
-form textarea,
+.fullname,
+.email,
+.textarea,
 .popup {
   width: 100%;
 }
 
-form input:nth-child(1) {
+.fullname {
   margin-top: 40px;
   height: 47px;
 }
 
-form input:nth-child(3) {
+.email {
   height: 47px;
 }
 
-form textarea {
+.textarea {
   height: 170px;
+  line-height: 20px;
 }
 
 form button {
@@ -628,4 +629,26 @@ form button {
   margin-top: 15px;
   border: 1px solid #ebecf0;
   height: 0;
+}
+
+.fullname-div {
+  position: relative;
+}
+
+.myicon {
+  position: absolute;
+  right: 15px;
+  padding-top: 50px;
+  font-size: large;
+}
+
+.textareaIcon,
+.emailIcon {
+  padding-top: 30px;
+}
+
+.error-text {
+  display: none;
+  color: #a12000;
+  font-size: 15px;
 }
