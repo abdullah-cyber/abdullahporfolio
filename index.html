@@ -17,12 +17,20 @@
     <nav class="main-menu">
       <div class="logo"><a href="" aria-label="myLogo icon">My Logo</a></div>
       <div class="hamburger">
-        <a href="" aria-label="hamburger icon" class="far fa-bars fa-2x"></a>
+        <a id="hamburger" aria-label="hamburger icon" class="far fa-bars fa-2x"></a>
       </div>
-      <div class="about">
+      <div class="about1">
         <a href="" aria-label="portfolio link">Portfolio</a>
         <a href="" aria-label="About link">About</a>
         <a href="" aria-label="Contact link">Contact</a>
+      </div>
+      <div class="overlay" id="myOverlay">
+        <div class="exitOverlay fa-2x" id="exitOverlay" aria-hidden="true">&times;</div>
+        <div class="about" id="about">
+          <a href="" aria-label="portfolio link">Portfolio</a>
+          <a href="" aria-label="About link">About</a>
+          <a href="" aria-label="Contact link">Contact</a>
+        </div>
       </div>
     </nav>
 
@@ -74,9 +82,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <div class="myButton">
-            <a href="" aria-label="more content">See Project</a>
-          </div>
+          <button class="myButton" aria-label="more content" type="button">See Project</button>
         </div>
       </section>
 
@@ -106,9 +112,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <div class="myButton">
-            <a href="" aria-label="more content">See Project</a>
-          </div>
+          <button class="myButton" aria-label="more content" type="button">See Project</button>
         </div>
       </section>
 
@@ -138,9 +142,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <div class="myButton">
-            <a href="" aria-label="more content">See Project</a>
-          </div>
+          <button class="myButton" aria-label="more content" type="button">See Project</button>
         </div>
       </section>
 
@@ -170,9 +172,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <div class="myButton">
-            <a href="" aria-label="more content">See Project</a>
-          </div>
+          <button class="myButton" aria-label="more content" type="button">See Project</button>
         </div>
       </section>
     </div>
@@ -203,8 +203,8 @@
             <a href="" class="fab fa-medium-m fa-2x m_logo" aria-label="mLogo"> </a>
             <a href="" class="angellist_logo fab fa-2x fa-angellist" aria-label="angellist"> </a>
           </div>
-          <div class="myButton get-my-resume">
-            <a href="">Get My Resume</a>
+          <div>
+            <a href="" class="get-my-resume">Get My Resume</a>
           </div>
         </div>
         <div class="drops">
@@ -315,5 +315,6 @@
         </form>
       </div>
     </footer>
+    <script src="js/mobilemenu.js"></script>
   </body>
 </html>

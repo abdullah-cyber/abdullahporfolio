@@ -22,8 +22,56 @@
   text-decoration: none;
 }
 
+/* mobile menu */
+
+.overlay {
+  height: 800px;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #6070ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  padding-top: 15px;
+
+  /* cursor: pointer; */
+}
+
+.exitOverlay {
+  color: white;
+  cursor: pointer;
+  float: right;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
 .about {
   display: none;
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: start;
+  margin-top: 60px;
+  padding-left: 30px;
+}
+
+.about1 {
+  display: none;
+}
+
+.about a {
+  display: table;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px;
+  font-size: 32px;
+  transition: 0.3s;
+  padding-bottom: 40px;
 }
 
 header {
@@ -90,7 +138,8 @@ header .connect {
   padding-bottom: 136px;
 }
 
-.myButton a {
+.myButton,
+.get-my-resume {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -100,6 +149,14 @@ header .connect {
   justify-content: center;
   letter-spacing: 0.03em;
   padding-top: 10px;
+  border: 1px solid #396df2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: white;
 }
 
 .flex_container_myself a {
@@ -240,17 +297,6 @@ section {
   border-radius: 8px;
   width: 89px;
   height: 24px;
-}
-
-.myButton {
-  border: 1px solid #396df2;
-  box-sizing: border-box;
-  border-radius: 16px;
-  width: 150px;
-  height: 50px;
-  margin-top: 20px;
-  cursor: pointer;
-  background-color: white;
 }
 
 footer {
