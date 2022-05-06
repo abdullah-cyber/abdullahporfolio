@@ -151,7 +151,7 @@ form {
 .popup-content {
   padding-left: 20px;
   margin: auto;
-  width: 600px;
+  width: 500px;
 }
 
 .popup-content-first {
@@ -160,7 +160,7 @@ form {
 
 .pop-img {
   background-repeat: no-repeat;
-  height: 420px;
+  height: 340px;
   width: auto;
   background-size: contain;
   float: inherit;
