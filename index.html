@@ -11,31 +11,36 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
   </head>
   <body>
     <!-- the nav -->
     <nav class="main-menu">
-      <div class="logo"><a href="" aria-label="myLogo icon">My Logo</a></div>
+      <div class="logo"><a href="#" aria-label="myLogo icon">My Logo</a></div>
       <div class="hamburger">
-        <a id="hamburger" aria-label="hamburger icon" class="far fa-bars fa-2x"></a>
+        <a aria-label="hamburger icon" class="far fa-bars fa-2x hamburger1"></a>
       </div>
       <div class="about1">
-        <a href="" aria-label="portfolio link">Portfolio</a>
-        <a href="" aria-label="About link">About</a>
-        <a href="" aria-label="Contact link">Contact</a>
+        <a href="#theSection" aria-label="portfolio link">Portfolio</a>
+        <a href="#about_myself" aria-label="About link">About</a>
+        <a href="#contact_me" aria-label="Contact link">Contact</a>
       </div>
       <div class="overlay" id="myOverlay">
         <div class="exitOverlay fa-2x" id="exitOverlay" aria-hidden="true">&times;</div>
         <div class="about" id="about">
-          <a href="" aria-label="portfolio link">Portfolio</a>
-          <a href="" aria-label="About link">About</a>
-          <a href="" aria-label="Contact link">Contact</a>
+          <a href="#theSection" aria-label="portfolio link" class="about-menu">Portfolio</a>
+          <a href="#about_myself" aria-label="About link" class="about-menu">About</a>
+          <a href="#contact_me" aria-label="Contact link" class="about-menu">Contact</a>
         </div>
       </div>
     </nav>
 
     <!-- header begins -->
-    <header>
+    <header class="animated 2 slideInUp delay-0.05s">
+      <div class="img"><img alt="" src="images/Ellipse3.png" /></div>
       <h1>I'm Dollar,<br />Glad to see you!</h1>
       <p>
         I’m a software developer! I can help you build a product , feature or website Look through
@@ -50,13 +55,17 @@
         <a href="" class="fab fa-medium-m fa-2x m_logo" aria-label="mLogo"> </a>
         <a href="" class="angellist_logo fab fa-2x fa-angellist" aria-label="angellist"> </a>
       </div>
+      <div class="eclipse">
+        <img alt="" src="images/Ellipse4.png" />
+        <img alt="" src="images/Ellipse12.png" />
+      </div>
     </header>
 
     <!-- end of header -->
 
     <!-- section  mode-->
 
-    <div class="section-content">
+    <div class="section-content animated 2 zoomIn delay-1s" id="theSection">
       <section>
         <div class="image-section ">
           <img
@@ -182,7 +191,7 @@
     <!-- about myself -->
 
     <footer>
-      <div class="about_myself">
+      <div class="about_myself" id="about_myself">
         <div class="about_myself_1">
           <h1>
             About <br />
@@ -296,7 +305,14 @@
 
       <!-- contact me -->
 
-      <div class="contact_me">
+      <div class="contact_me" id="contact_me">
+        <div class="contact-eclipse"><img alt="" src="images/Rectangle3.png" /></div>
+        <div class="contact-eclipse1"><img alt="" src="images/Ellipse6.png" /></div>
+        <div class="contact-eclipse2"><img alt="" src="images/Rectangle7.png" /></div>
+        <div class="contact-eclipse3"><img alt="" src="images/Ellipse5.png" /></div>
+        <div class="contact-eclipse4"><img alt="" src="images/Rectangle6.png" /></div>
+        <div class="contact-eclipse5"><img alt="" src="images/Ellipse11.png" /></div>
+
         <h1>Contact me</h1>
         <p>
           If you have an application you are interested in developing, a feature that you need built
@@ -315,6 +331,57 @@
         </form>
       </div>
     </footer>
+
+    <!-- beginning of popup  -->
+    <div class="popup" id="popup">
+      <div class="popup-content animated zoomIn">
+        <div class="popup-header">
+          <h2 class="name">Tonic</h2>
+          <span class="cancel fa-1.5x" id="cancelBtn">&times;</span>
+        </div>
+        <div>
+          <ul class="content-section-sub-1 technology">
+            <li>CANOPY</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+        </div>
+        <div class="popup-content-first">
+          <div class="pop-img" id="image"></div>
+        </div>
+        <div class="popup-content-second">
+          <div class="popup-content-second-description">
+            <p class="description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essent
+            </p>
+          </div>
+          <div class="popup-list">
+            <div class="popup-content-second-list">
+              <ul class="popup-content-section-sub ruby">
+                <li>html</li>
+                <li>Ruby on rails</li>
+                <li>css</li>
+                <li>javascript</li>
+              </ul>
+              <div class="theBorder"></div>
+            </div>
+            <div class="see-project">
+              <a href="" class="myButton"
+                >See Live<i class="fa-light fas fa-external-link-alt"></i
+              ></a>
+              <a href="" class="myButton">See Source<i class=" fab fa-github fa-2x"></i></a>
+              <i class="fa-thin fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of popup -->
     <script src="js/mobilemenu.js"></script>
   </body>
 </html>

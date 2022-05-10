@@ -9,7 +9,6 @@
 }
 
 .about1 a {
-  /* color: #344563; */
   padding: 5px;
   display: inline-block;
 }
@@ -19,15 +18,21 @@
 }
 
 header {
-  height: auto;
   width: auto;
   border-bottom-left-radius: 100px;
   padding: 0 150px 0 150px;
   background-image: url(/images/header-shapes-desktop.jpg);
   background-size: cover;
+  height: 916px;
+}
+
+.img,
+.eclipse {
+  display: none;
 }
 
 header h1 {
+  padding-top: 314px;
   color: #091e42;
 }
 
@@ -51,33 +56,37 @@ section {
   height: 300px;
 }
 
-.first-snapshoot {
+.first-snapshoot,
+.second-snapshoot,
+.third-snapshoot,
+.fourth-snapshoot {
   width: auto;
   height: 100%;
+}
+
+.first-snapshoot {
   content: url(/images/Snapshoot\ Portfolio\ desktop.png);
 }
 
 .second-snapshoot {
-  width: auto;
-  height: 100%;
   content: url(/images/Snapshoot\ Portfolio2\ desktop.png);
 }
 
 .third-snapshoot {
-  width: auto;
-  height: 100%;
   content: url(/images/Snapshoot\ Portfolio3\ desktop.png);
 }
 
 .fourth-snapshoot {
-  width: auto;
-  height: 100%;
   content: url(/images/Snapshoot\ Portfolio4\ desktop.png);
 }
 
 .tonic {
   font-size: 20px;
   color: #091e42;
+}
+
+.img-sec {
+  order: 1;
 }
 
 .content-section-sub-1,
@@ -136,4 +145,87 @@ textarea {
 form {
   width: 500px;
   margin: auto;
+}
+
+.popup-content {
+  padding-left: 20px;
+  margin: auto;
+  width: 600px;
+}
+
+.popup-content-first {
+  height: auto;
+}
+
+.pop-img {
+  background-repeat: no-repeat;
+  height: 420px;
+  width: auto;
+  background-size: contain;
+  float: inherit;
+}
+
+.popup-content-second {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+.popup-content-second-description {
+  order: 0;
+  width: 750px;
+  padding-top: 15px;
+}
+
+.popup-content-second-list {
+  order: 1;
+}
+
+.see-project .myButton {
+  width: 100px;
+}
+
+.popup-list {
+  width: 170px;
+  padding: 10px;
+}
+
+.description::after {
+  content:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the"
+    "releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with"
+    "the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley"
+    "of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem"
+    "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.see-project {
+  padding-left: 15px;
+}
+
+.contact-eclipse,
+.contact-eclipse1 {
+  display: block;
+}
+
+.contact-eclipse {
+  width: 87.2px;
+  height: 18.7px;
+  margin-right: 75px;
+  padding-top: 30px;
+  align-self: flex-end;
+}
+
+.contact-eclipse1 {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  padding-top: 35px;
+  align-self: flex-end;
 }

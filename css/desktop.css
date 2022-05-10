@@ -10,7 +10,38 @@ header {
   background-size: cover;
 }
 
-.about {
+.img {
+  position: absolute;
+  width: 224px;
+  height: 224px;
+  top: 192px;
+  align-self: flex-end;
+}
+
+.eclipse img:nth-child(1) {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  left: 839px;
+  top: 758px;
+}
+
+.eclipse img:nth-child(2) {
+  position: absolute;
+  width: 36.9px;
+  height: 18.45px;
+  left: 290.7px;
+  top: 789.93px;
+  transform: rotate(-176.08deg);
+}
+
+header h1 {
+  padding-top: 314px;
+}
+
+.about,
+.img,
+.eclipse {
   display: block;
 }
 
@@ -29,13 +60,12 @@ header {
 
 .section-content {
   margin: 30px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 section {
   padding: 24px;
   height: 396px;
-  width: auto;
   margin: auto;
   margin-bottom: 80px;
   justify-self: center;
@@ -45,8 +75,13 @@ section {
   order: 1;
 }
 
-.snapshoot {
+.snapshoot,
+section {
   width: auto;
+}
+
+.snapshoot,
+.popup {
   height: 100%;
 }
 
@@ -90,7 +125,8 @@ section {
 .sec-1 p,
 .sec-2 p,
 .sec-3 p,
-.sec-4 p {
+.sec-4 p,
+.description {
   visibility: hidden;
   position: relative;
 }
@@ -100,13 +136,14 @@ section {
 }
 
 .sec-4 .content-section-sub-2 li {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .sec-1 p::after,
 .sec-2 p::after,
 .sec-3 p::after,
-.sec-4 p::after {
+.sec-4 p::after,
+.description::after {
   visibility: visible;
   position: absolute;
   top: 20px;
@@ -136,6 +173,16 @@ section {
   content:
     "A smart assistant to make driving more safe, efficient, and fun by unlocking"
     " your most expensive computer: your car.";
+  top: 0;
+}
+
+.sec-1 p::after,
+.sec-2 p::after,
+.sec-3 p::after,
+.sec-4 p::after {
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .about_myself {
@@ -157,4 +204,122 @@ hr {
 .contact_me {
   padding-bottom: 100px;
   flex-flow: column;
+}
+
+.popup {
+  width: 100%;
+}
+
+.popup-content {
+  padding-left: 20px;
+  margin: auto;
+  width: 850px;
+  padding-bottom: 200px;
+}
+
+.popup-content-first {
+  height: auto;
+}
+
+.pop-img {
+  background-repeat: no-repeat;
+  height: 586px;
+  width: 1108px;
+  background-size: contain;
+  margin-top: 20px;
+}
+
+.popup-content-second {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup-content-second-description {
+  width: 1000px;
+}
+
+.popup-list {
+  padding-left: 15px;
+  padding-top: 15px;
+  order: 1;
+  width: 260px;
+}
+
+.theBorder {
+  margin-top: 20px;
+}
+
+.see-project {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.description::after {
+  content:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the"
+    "releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with"
+    "the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley"
+    "of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem"
+    "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+}
+
+.contact-eclipse,
+.contact-eclipse1,
+.contact-eclipse2,
+.contact-eclipse3,
+.contact-eclipse4,
+.contact-eclipse5 {
+  position: absolute;
+  display: block;
+}
+
+.contact-eclipse {
+  width: 107.2px;
+  height: 24.7px;
+  margin-right: 75px;
+  padding-top: 30px;
+  align-self: flex-end;
+}
+
+.contact-eclipse1 {
+  width: 129px;
+  height: 129px;
+  margin-right: 30px;
+  padding-top: 70px;
+  align-self: flex-end;
+}
+
+.contact-eclipse2 {
+  width: 117.53px;
+  height: 21.03px;
+  left: 83.86px;
+  padding-top: 290px;
+
+  /* transform: matrix(0.8, 0.6, 0.6, -0.8, 0, 0); */
+}
+
+.contact-eclipse3 {
+  width: 48px;
+  height: 48px;
+  left: 111.53px;
+  padding-top: 350px;
+}
+
+.contact-eclipse4 {
+  width: 55.6px;
+  height: 9.95px;
+  left: 327px;
+  padding-top: 710px;
+}
+
+.contact-eclipse5 {
+  width: 41.18px;
+  height: 20.59px;
+  left: 350.92px;
+  padding-top: 730px;
 }

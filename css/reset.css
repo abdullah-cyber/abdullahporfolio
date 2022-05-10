@@ -19,14 +19,19 @@
     margin:0;
 }
 body,html{
-
+    height: 100%;
     width: 100%;
     background-color: #E5E5E5;
     font-family: Poppins;  
     font-style: normal;
 }
-header, .main-menu, section,.section-content,.content-section-sub-1,
- .content-section-sub-2,.about_myself,.contact_me{
+.main-menu{
+    display: inline-flex;
+    width: 100%;
+    height: 40px
+}
+header,.eclipse,section,.section-content,.content-section-sub-1,
+ .content-section-sub-2,.popup-content-section-sub,.about_myself,.contact_me, .popup{
     display: flex;
 }
 .logo a, .hamburger a, .about a, .about1 a{
@@ -35,22 +40,22 @@ header, .main-menu, section,.section-content,.content-section-sub-1,
     text-decoration: none;
     line-height: 20px;
 }
-.main-menu,.content-section-sub-1, .content-section-sub-2,.flex_container_myself{
+.main-menu,.content-section-sub-1, .content-section-sub-2,.popup-content-section-sub,.flex_container_myself{
     flex-flow: row;
 }
-.section-content{
+.section-content, .popup-content{
     flex-flow:wrap;
 }
-.myButton:hover, .get-my-resume:hover,
+.see-project a:hover, .get-my-resume:hover,
  button:hover{
     background: #6070FF;
     color: #FFFFFF;
 }
-.myButton:active, .get-my-resume:active,
+.see-project a:active, .get-my-resume:active,
  button:active{
     background: #2230D2;
  }
- .myButton button:hover{
+ .see-project a:active{
      color: white;
  }
  form input:nth-child(1),
