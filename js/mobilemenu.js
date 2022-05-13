@@ -205,8 +205,7 @@ const buttonValidation = () => {
     errorMessage1[1].style.display = 'block';
     errorMessage1[2].style.display = 'block';
     return false;
-  }
-  if (fullname.value == '') {
+  } else if (fullname.value == '') {
     errorMessage1[0].style.display = 'block';
     return false;
   } else if (fullname.value.length < 3) {
