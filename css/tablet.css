@@ -3,8 +3,14 @@
   padding-right: 50px;
 }
 
-.about1 {
+.about1,
+.contact-eclipse,
+.contact-eclipse1,
+.description1 {
   display: block;
+}
+
+.about1 {
   padding-right: 20px;
 }
 
@@ -13,7 +19,12 @@
   display: inline-block;
 }
 
-.hamburger {
+.hamburger,
+.img,
+.eclipse,
+.description,
+.error-text,
+.error1-text {
   display: none;
 }
 
@@ -24,11 +35,6 @@ header {
   background-image: url(/images/header-shapes-desktop.jpg);
   background-size: cover;
   height: 916px;
-}
-
-.img,
-.eclipse {
-  display: none;
 }
 
 header h1 {
@@ -90,10 +96,7 @@ section {
 }
 
 .content-section-sub-1,
-.content-section-sub-2 {
-  font-size: 10px;
-}
-
+.content-section-sub-2,
 .content-section p {
   font-size: 10px;
 }
@@ -122,11 +125,17 @@ footer {
   flex-flow: column;
   text-align: center;
   border-top-left-radius: 100px;
+  position: static;
+}
+
+.contact_me p,
+form,
+.popup-content {
+  margin: auto;
 }
 
 .contact_me p {
   width: 680px;
-  margin: auto;
   padding-bottom: 12px;
 }
 
@@ -134,23 +143,21 @@ form button {
   font-weight: 500;
 }
 
-form input:nth-child(1),
-form input:nth-child(3),
-textarea {
+.fullname,
+.email,
+.textarea {
   border: none;
   border-radius: 0;
-  margin: 15px;
+  margin-top: 15px;
 }
 
 form {
   width: 500px;
-  margin: auto;
 }
 
 .popup-content {
   padding-left: 20px;
-  margin: auto;
-  width: 600px;
+  width: 500px;
 }
 
 .popup-content-first {
@@ -159,7 +166,7 @@ form {
 
 .pop-img {
   background-repeat: no-repeat;
-  height: 420px;
+  height: 340px;
   width: auto;
   background-size: contain;
   float: inherit;
@@ -191,27 +198,8 @@ form {
   padding: 10px;
 }
 
-.description::after {
-  content:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the"
-    "releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
-    "standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with"
-    "the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley"
-    "of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem"
-    "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
-    "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
-  margin-bottom: 20px;
-  justify-content: center;
-}
-
 .see-project {
   padding-left: 15px;
-}
-
-.contact-eclipse,
-.contact-eclipse1 {
-  display: block;
 }
 
 .contact-eclipse {
@@ -228,4 +216,26 @@ form {
   margin-right: 30px;
   padding-top: 35px;
   align-self: flex-end;
+}
+
+.fullname-div {
+  position: relative;
+}
+
+form .fullname-div input {
+  padding-left: 15px;
+  outline: none;
+}
+
+.myicon {
+  position: absolute;
+  right: 15px;
+  padding-top: 25px;
+  font-size: larger;
+}
+
+.error-text,
+.error1-text {
+  color: #a12000;
+  text-align: start;
 }

@@ -30,8 +30,17 @@ body,html{
     width: 100%;
     height: 40px
 }
-header,.eclipse,section,.section-content,.content-section-sub-1,
- .content-section-sub-2,.popup-content-section-sub,.about_myself,.contact_me, .popup{
+ header,
+.eclipse,
+ section,
+.section-content,
+.content-section-sub-1,
+ .content-section-sub-2,
+ .popup-content-section-sub,
+ .about_myself,
+ .contact_me,
+  .popup,
+  .fullname-div{
     display: flex;
 }
 .logo a, .hamburger a, .about a, .about1 a{
@@ -40,7 +49,11 @@ header,.eclipse,section,.section-content,.content-section-sub-1,
     text-decoration: none;
     line-height: 20px;
 }
-.main-menu,.content-section-sub-1, .content-section-sub-2,.popup-content-section-sub,.flex_container_myself{
+.main-menu,
+.content-section-sub-1,
+ .content-section-sub-2,
+ .popup-content-section-sub,
+ .flex_container_myself{
     flex-flow: row;
 }
 .section-content, .popup-content{
@@ -58,11 +71,13 @@ header,.eclipse,section,.section-content,.content-section-sub-1,
  .see-project a:active{
      color: white;
  }
- form input:nth-child(1),
-form input:nth-child(3),
-textarea,
+ .fullname,
+.email,
+.textarea,
 form button{
     font-family: poppins;
     font-style: normal;
 }
 
+ 
+  
