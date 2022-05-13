@@ -13,6 +13,7 @@ const myEmail = document.querySelector('#email');
 const textarea = document.querySelector('#textarea');
 const icon = document.querySelectorAll('.myicon');
 const errorMessage = document.querySelectorAll('.error-text');
+const errorMessage1 = document.querySelectorAll('.error1-text');
 
 const mobileMenu = () => {
   overlay.style.width = '100%';
@@ -28,8 +29,8 @@ const closeOverlay = () => {
 };
 
 exitOverlay.addEventListener('click', closeOverlay);
-aboutmenu.forEach(x => {
-  x.addEventListener('click', closeOverlay);
+aboutmenu.forEach(oval => {
+  oval.addEventListener('click', closeOverlay);
 });
 
 //pop up code
@@ -80,10 +81,12 @@ for (let i = 0; i < list.length; i += 1) {
   });
 }
 
-closeBtn.addEventListener('click', () => {
+const closePopup = () => {
   mypopUp.style.display = 'none';
   document.body.style.overflow = 'visible';
-});
+};
+
+closeBtn.addEventListener('click', closePopup);
 
 window.onclick = function(event) {
   if (event.target == mypopUp) {
@@ -93,72 +96,131 @@ window.onclick = function(event) {
 };
 
 //validation
-submitBtn.disabled = true;
+
+const clear1 = () => {
+  icon[0].style.display = 'none';
+  fullname.style.borderColor = '#ffffff';
+  errorMessage[0].style.display = 'none';
+  errorMessage1[0].style.display = 'none';
+};
+
+const clear2 = () => {
+  icon[1].style.display = 'none';
+  myEmail.style.borderColor = '#ffffff';
+  errorMessage[1].style.display = 'none';
+  errorMessage1[1].style.display = 'none';
+};
+
+const clear3 = () => {
+  icon[2].style.display = 'none';
+  textarea.style.borderColor = '#ffffff';
+  errorMessage[2].style.display = 'none';
+  errorMessage1[2].style.display = 'none';
+};
+
+const error1 = () => {
+  icon[0].innerHTML = '<i class="fa fa-exclamation-circle"></i>';
+  icon[0].style.color = '#e74c3c';
+  errorMessage[0].style.display = 'block';
+  errorMessage1[0].style.display = 'none';
+  fullname.style.borderColor = '#e74c3c';
+};
+
+const error2 = () => {
+  icon[1].innerHTML = '<i class="fa fa-exclamation-circle"></i>';
+  icon[1].style.color = '#e74c3c';
+  errorMessage[1].style.display = 'block';
+  errorMessage1[1].style.display = 'none';
+  myEmail.style.borderColor = '#e74c3c';
+};
+
+const error3 = () => {
+  icon[2].innerHTML = '<i class="fa fa-exclamation-circle"></i>';
+  icon[2].style.color = '#e74c3c';
+  errorMessage[2].style.display = 'block';
+  errorMessage1[2].style.display = 'none';
+  textarea.style.borderColor = '#e74c3c';
+};
+
+const success1 = () => {
+  icon[0].innerHTML = '<i class="fas fa-check-circle"></i>';
+  icon[0].style.color = 'green';
+  fullname.style.borderColor = 'green';
+  errorMessage[0].style.display = 'none';
+};
+
+const success2 = () => {
+  icon[1].innerHTML = '<i class="fas fa-check-circle"></i>';
+  icon[1].style.color = 'green';
+  myEmail.style.borderColor = 'green';
+  errorMessage[1].style.display = 'none';
+};
+
+const success3 = () => {
+  icon[2].innerHTML = '<i class="fas fa-check-circle"></i>';
+  icon[2].style.color = 'green';
+  textarea.style.borderColor = 'green';
+  errorMessage[2].style.display = 'none';
+};
 
 const fullnameChecker = () => {
   icon[0].style.display = 'inline-block';
 
   if (fullname.value === '') {
-    icon[0].style.display = 'none';
-    fullname.style.borderColor = '#ffffff';
-    errorMessage[0].style.display = 'none';
-    submitBtn.disabled = true;
+    clear1();
   } else if (fullname.value.length < 3) {
-    icon[0].innerHTML = '<i class="fa fa-exclamation-circle"></i>';
-    icon[0].style.color = '#e74c3c';
-    errorMessage[0].style.display = 'block';
-    fullname.style.borderColor = '#e74c3c';
-    submitBtn.disabled = true;
+    error1();
   } else {
-    icon[0].innerHTML = '<i class="fas fa-check-circle"></i>';
-    icon[0].style.color = 'green';
-    fullname.style.borderColor = 'green';
-    errorMessage[0].style.display = 'none';
+    success1();
   }
 };
-
 const emailChecker = () => {
   icon[1].style.display = 'inline-block';
-  let emailRegX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (myEmail.value === '') {
-    icon[1].style.display = 'none';
-    myEmail.style.borderColor = '#ffffff';
-    errorMessage[1].style.display = 'none';
-    submitBtn.disabled = true;
+    clear2();
   } else if (!myEmail.value.match(emailRegX)) {
-    icon[1].innerHTML = '<i class="fa fa-exclamation-circle"></i>';
-    icon[1].style.color = '#e74c3c';
-    errorMessage[1].style.display = 'block';
-    myEmail.style.borderColor = '#e74c3c';
-    submitBtn.disabled = true;
+    error2();
   } else {
-    icon[1].innerHTML = '<i class="fas fa-check-circle"></i>';
-    icon[1].style.color = 'green';
-    myEmail.style.borderColor = 'green';
-    errorMessage[1].style.display = 'none';
+    success2();
   }
 };
 
 const textareaChecker = () => {
   icon[2].style.display = 'inline-block';
   if (textarea.value === '') {
-    icon[2].style.display = 'none';
-    textarea.style.borderColor = '#ffffff';
-    errorMessage[2].style.display = 'none';
-    submitBtn.disabled = true;
+    clear3();
   } else if (textarea.value.length < 15) {
-    icon[2].innerHTML = '<i class="fa fa-exclamation-circle"></i>';
-    icon[2].style.color = '#e74c3c';
-    errorMessage[2].style.display = 'block';
-    textarea.style.borderColor = '#e74c3c';
-    submitBtn.disabled = true;
+    error3();
   } else {
-    icon[2].innerHTML = '<i class="fas fa-check-circle"></i>';
-    icon[2].style.color = 'green';
-    textarea.style.borderColor = 'green';
-    errorMessage[2].style.display = 'none';
+    success3();
     submitBtn.disabled = false;
+  }
+};
+
+const buttonValidation = () => {
+  if (fullname.value == '' && myEmail.value == '' && textarea.value == '') {
+    errorMessage1[0].style.display = 'block';
+    errorMessage1[1].style.display = 'block';
+    errorMessage1[2].style.display = 'block';
+    return false;
+  }
+  if (fullname.value == '') {
+    errorMessage1[0].style.display = 'block';
+    return false;
+  } else if (fullname.value.length < 3) {
+    return false;
+  } else if (myEmail.value == '') {
+    errorMessage1[1].style.display = 'block';
+    return false;
+  } else if (textarea.value == '') {
+    errorMessage1[2].style.display = 'block';
+    return false;
+  } else if (textarea.value.length < 15) {
+    return false;
+  } else {
+    return true;
   }
 };
 

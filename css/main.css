@@ -3,6 +3,11 @@
   padding-left: 24px;
   padding-right: 36px;
   padding-top: 10px;
+}
+
+.main-menu,
+.popup-header,
+.popup {
   justify-content: space-between;
 }
 
@@ -19,6 +24,45 @@
   color: #6070ff;
   font-weight: bold;
   line-height: 20px;
+}
+
+#exitOverlay,
+.about a {
+  color: white;
+}
+
+.flex_container_myself a {
+  color: #505f79;
+  font-size: 23px;
+  padding-right: 15px;
+}
+
+.see-project a,
+.popup-header {
+  align-items: center;
+}
+
+.about a {
+  display: table;
+  font-weight: 600;
+  padding: 8px;
+  font-size: 32px;
+  transition: 0.3s;
+  padding-bottom: 40px;
+}
+
+.see-project a {
+  justify-content: space-evenly;
+  color: #6070ff;
+}
+
+.flex_container_myself a,
+.about a,
+.logo a,
+.hamburger a,
+header .connect a,
+.myButton,
+.get-my-resume {
   text-decoration: none;
 }
 
@@ -38,15 +82,20 @@
 }
 
 #exitOverlay {
-  color: white;
   cursor: pointer;
   float: right;
   padding-top: 15px;
   padding-right: 30px;
 }
 
-.about {
+.about,
+.popup-content,
+.dropdown,
+.fullname-div {
   position: relative;
+}
+
+.about {
   top: 10%;
   width: 100%;
   text-align: start;
@@ -54,21 +103,24 @@
   padding-left: 30px;
 }
 
-.about a {
-  display: table;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  padding: 8px;
-  font-size: 32px;
-  transition: 0.3s;
-  padding-bottom: 40px;
+header,
+.snapshoot,
+.dropdown-content,
+.dropdown-content2,
+.dropdown-content3 img,
+.popup-content-first {
+  height: auto;
+}
+
+header,
+section,
+.about_myself,
+.contact_me {
+  flex-flow: column;
 }
 
 header {
-  height: auto;
   width: auto;
-  flex-flow: column;
   padding: 24px;
   background-image: url(/images/header-shapes-mobile.jpg);
   background-repeat: no-repeat;
@@ -97,12 +149,16 @@ section p {
   padding: 12px 0;
 }
 
+.contact_me p,
+.contact_me h1 {
+  text-align: center;
+}
+
 .contact_me p {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   color: #ebebff;
-  text-align: center;
   padding-top: 12px;
 }
 
@@ -139,11 +195,17 @@ header .connect {
 }
 
 .myButton,
+.get-my-resume,
+input[type="radio"] ~ label,
+.cancel {
+  cursor: pointer;
+}
+
+.myButton,
 .get-my-resume {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  text-decoration: none;
   color: #396df2;
   justify-content: center;
   letter-spacing: 0.03em;
@@ -154,25 +216,10 @@ header .connect {
   width: 150px;
   height: 50px;
   margin-top: 20px;
-  cursor: pointer;
   background-color: white;
 }
 
-.flex_container_myself a {
-  color: #505f79;
-  font-size: 23px;
-  text-decoration: none;
-  padding-right: 15px;
-}
-
-.see-project a {
-  align-items: center;
-  justify-content: space-evenly;
-  color: #6070ff;
-}
-
 header .connect a {
-  text-decoration: none;
   color: #505f79;
   padding: 3px;
   font-size: 23px;
@@ -183,7 +230,6 @@ header .connect a {
 }
 
 section {
-  flex-flow: column;
   background: #fff;
   margin: 24px;
   padding: 16px;
@@ -200,7 +246,6 @@ section {
 .snapshoot {
   width: 100%;
   max-width: 768px;
-  height: auto;
 }
 
 .tonic {
@@ -235,7 +280,6 @@ section {
 }
 
 .content-section-sub-1 li {
-  font-weight: bold;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
@@ -243,14 +287,26 @@ section {
 }
 
 .content-section-sub-2 li,
+.popup-content-section-sub li,
+.dropdown {
+  display: inline-block;
+}
+
+.content-section-sub-2 li,
+.popup-content-section-sub li,
+.about_myself h1,
+.contact_me h1,
+.content-section-sub-1 li {
+  font-weight: bold;
+}
+
+.content-section-sub-2 li,
 .popup-content-section-sub li {
   list-style: none;
-  font-weight: bold;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
-  display: inline-block;
   border: 2px solid #ebebff;
   background-color: #ebebff;
   text-align: center;
@@ -278,24 +334,32 @@ section {
 }
 
 .content-section-sub-2 li:nth-child(1),
-.popup-content-section-sub li:nth-child(1) {
+.popup-content-section-sub li:nth-child(1),
+.content-section-sub-2 li:nth-child(2),
+.popup-content-section-sub li:nth-child(2),
+.content-section-sub-2 li:nth-child(3),
+.popup-content-section-sub li:nth-child(3),
+.ruby li:nth-child(3),
+.ruby li:nth-child(4) {
   border-radius: 8px;
-  width: 50px;
   height: 24px;
+}
+
+.content-section-sub-2 li:nth-child(1),
+.popup-content-section-sub li:nth-child(1) {
+  width: 50px;
 }
 
 .content-section-sub-2 li:nth-child(2),
-.popup-content-section-sub li:nth-child(2) {
-  border-radius: 8px;
+.popup-content-section-sub li:nth-child(2),
+.ruby li:nth-child(3) {
   width: 45px;
-  height: 24px;
 }
 
 .content-section-sub-2 li:nth-child(3),
-.popup-content-section-sub li:nth-child(3) {
-  border-radius: 8px;
+.popup-content-section-sub li:nth-child(3),
+.ruby li:nth-child(4) {
   width: 89px;
-  height: 24px;
 }
 
 .ruby li:nth-child(2),
@@ -310,20 +374,11 @@ input[type="radio"],
 .contact-eclipse2,
 .contact-eclipse3,
 .contact-eclipse4,
-.contact-eclipse5 {
+.contact-eclipse5,
+.description1,
+.error-text,
+.error1-text {
   display: none;
-}
-
-.ruby li:nth-child(3) {
-  border-radius: 8px;
-  width: 45px;
-  height: 24px;
-}
-
-.ruby li:nth-child(4) {
-  border-radius: 8px;
-  width: 89px;
-  height: 24px;
 }
 
 footer {
@@ -331,12 +386,15 @@ footer {
   border-top-right-radius: 70px;
 }
 
-.about_myself {
+.about_myself,
+.contact_me {
   position: static;
+}
+
+.about_myself {
   color: #172b4d;
   padding: 114px 24px 0 24px;
   margin-top: 114px;
-  flex-flow: column;
 }
 
 .about_myself_1 {
@@ -344,7 +402,6 @@ footer {
 }
 
 .about_myself h1 {
-  font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   padding: 12px 0;
@@ -357,8 +414,12 @@ footer {
   line-height: 24px;
 }
 
-.flex_container_myself {
+.flex_container_myself,
+.popup-content {
   flex-wrap: wrap;
+}
+
+.flex_container_myself {
   padding-left: 15px;
   padding-top: 26px;
 }
@@ -371,8 +432,6 @@ footer {
 
 .dropdown {
   margin-top: 36px;
-  position: relative;
-  display: inline-block;
 }
 
 .dropdown-content,
@@ -393,7 +452,6 @@ footer {
 .dropdown-content2,
 .dropdown-content3 img {
   width: auto;
-  height: auto;
 }
 
 hr {
@@ -444,15 +502,18 @@ span {
   opacity: 1;
 }
 
-input[type="radio"] ~ label {
+input[type="radio"] ~ label,
+.myicon {
   position: absolute;
+}
+
+input[type="radio"] ~ label {
   right: 10px;
   top: 20px;
   transition: 0.4s ease-in-out;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -ms-transition: 0.4s ease-in-out;
-  cursor: pointer;
 }
 
 #open-1:checked ~ .open,
@@ -484,21 +545,17 @@ input[type="radio"] ~ label {
 
 /* * contact me  */
 .contact_me {
-  flex-flow: column;
   margin-top: 120px;
   background: #6070ff;
   border: 2px solid #fff;
   padding: 24px;
   border-top-left-radius: 70px;
-  position: static;
 }
 
 .contact_me h1 {
-  text-align: center;
   color: #fff;
   font-size: 40px;
   line-height: 52px;
-  font-weight: bold;
   padding-top: 103px;
 }
 
@@ -531,10 +588,10 @@ form button {
 
 .fullname {
   margin-top: 40px;
-  height: 47px;
 }
 
-.email {
+.email,
+.fullname {
   height: 47px;
 }
 
@@ -560,7 +617,6 @@ form button {
 .popup {
   padding: 20px;
   flex-direction: column;
-  justify-content: space-between;
   overflow: auto;
   position: fixed;
   z-index: 10;
@@ -575,21 +631,14 @@ form button {
 }
 
 .popup-content {
-  flex-flow: wrap;
   padding: 16px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  position: relative;
   background-color: #fff;
   padding-bottom: 50px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   overflow-x: hidden;
   transition: all 3s;
-}
-
-.popup-header {
-  justify-content: space-between;
-  align-items: center;
 }
 
 .description {
@@ -598,7 +647,6 @@ form button {
 
 .cancel {
   pointer-events: all;
-  cursor: pointer;
 }
 
 .pop-img {
@@ -607,10 +655,6 @@ form button {
   height: 270px;
   background-size: contain;
   margin-top: 20px;
-}
-
-.popup-content-first {
-  height: auto;
 }
 
 .see-project .myButton {
@@ -631,12 +675,7 @@ form button {
   height: 0;
 }
 
-.fullname-div {
-  position: relative;
-}
-
 .myicon {
-  position: absolute;
   right: 15px;
   padding-top: 50px;
   font-size: large;
@@ -647,8 +686,8 @@ form button {
   padding-top: 30px;
 }
 
-.error-text {
-  display: none;
+.error-text,
+.error1-text {
   color: #a12000;
   font-size: 15px;
 }
